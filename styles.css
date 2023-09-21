@@ -1,0 +1,64 @@
+body{
+    font-family: fcb-extra-bold,Arial,Helvetica Neue,Helvetica,sans-serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color:#070730e8 ;
+}
+@media(max-width: 564px)  {
+    body{
+        background-image: url(img/camp\ nou.jpg);
+    }  
+}
+@media(min-width: 1024px){
+    body{
+        background-image: url(img/Camp-Nou-Grass.jpg);
+        background-size:contain;
+        background-position: 10%;
+    }  
+}
+@media(min-width: 564px){
+    body{
+        background-color: #070730e8 ;
+    }  
+}
+.tittle{
+    background-color:  #070730e8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+.header .tittle .tittle-logo a{
+    text-decoration: none;
+    padding-right: 40px;
+}
+h1{
+    font-size: 60px;
+    padding-left: 20px;
+}
+.tittle-logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .nav-bar{
+    background: linear-gradient(90deg, #ed0808ed 18.31%, #ec0909eb 18.32%, #ed0808eb 18.32%, #F70000 22.45%, #000AF9 101.25%);
+    height: auto;
+    text-align: center;
+}
+.header .nav-bar ul{
+    list-style: none;
+    display: inline-block;
+    padding:5px;
+}
+.header .nav-bar ul li{
+    float: left;
+    padding:10px;
+}
+.header .nav-bar ul li a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 18px;
+}
