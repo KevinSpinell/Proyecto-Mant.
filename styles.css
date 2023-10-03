@@ -1,3 +1,7 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 body{
     font-family: fcb-extra-bold,Arial,Helvetica Neue,Helvetica,sans-serif;
     background-repeat: no-repeat;
@@ -18,12 +22,12 @@ body{
     }
     .container .principal span{
         color: #070730e8;
+        font-size: 2vw;
     }
     .container img{
         display: none;
     }
-    
-}
+}    
 @media(min-width: 1024px){
     body{
         background-color: #070730e8;
@@ -56,6 +60,9 @@ body{
     justify-content: space-between;
     padding: 0vmax;
 }
+.header .tittle h3 a{
+    color: white;
+}
 .header .tittle .tittle-logo a{
     text-decoration: none;
     padding-right: 40px;
@@ -73,6 +80,9 @@ span{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+h3{
+    font-size: 3vw;
 }
 /* Barra de Navegacion */
 .header .nav-bar{
