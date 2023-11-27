@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: fcb-extra-bold,Arial,Helvetica Neue,Helvetica,sans-serif;
+    background-color:#070730e8 ;
+    color: aliceblue;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    max-height: 65px;
+    gap:20px;
+    background: linear-gradient(90deg, #ed0808ed 18.31%, #ec0909eb 18.32%, #ed0808eb 18.32%, #F70000 22.45%, #000AF9 101.25%);
+    font-size: 2rem;
+}
+.header>.logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 1rem;
+}
+.header>.logo>ul{
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+}
+.header>.logo>ul>li>a{
+    text-decoration: none;
+    color: #fff;
+}
+/* img muestra */
+.muestra{
+    background-image: url(https://store.fcbarcelona.com/cdn/shop/collections/Banner_E-Commerce_1aEquipacion-general__375x640_Mobile.jpg?v=1695883212&width=1920);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    background-position: center;
+    display: flex;
+    align-items: end;
+    border-bottom:5px solid #fff;
+}
+.muestra>h1{
+    font-size: 7vh;
+}
+/* tienda */
+.store_container{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    
+}
+.article>.img_article{
+    overflow: hidden;
+    min-height: 300px;
+}
+.article{
+    width: 200px;
+    height: auto;
+    overflow: hidden;
+}
+.article:hover{
+    cursor: pointer;
+}
+.article>.img_article>img{
+    width: 200px;
+    height: 300px;
+    border-radius: 3%;
+}
+.article>.img_article>img:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+    border-radius:3% ;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/sign_up.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Sign Up</h1>
+        <div class="logo">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+            <img src="https://seeklogo.com/images/F/FC_Barcelona-logo-D941E13B46-seeklogo.com.png" alt="" width="100px">
+        </div>
+    </div>
+    <div class="formulario">
+        <form action="" autocomplete="off">
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name" class="inputs">
+            <br>
+            <label for="lastName">Apellido</label>
+            <input type="text" name="lastName" id="lastName" class="inputs">
+            <br>
+            <label for="email">Correo </label>
+            <input type="email" name="email" id="email" class="inputs">
+            <br>
+            <label for="password">Contraseña</label>
+            <input type="password" name="password" id="password" class="inputs">
+            <br>
+            <button type="submit" onclick="register()">Registrarme</button>
+        </form>
+    </div>
+    <script>
+        function register(){
+            let name = document.getElementById('name').value;
+            let lastName = document.getElementById('lastName').value;
+            let email = document.getElementById('email').value;
+            let password = document.getElementById('password').value;
+            if(name == "" || lastName == "" || email == "" || password == ""){
+                window.alert("Todos los campos son obligatorios")
+            }else if(password.length<8 || name.length<3 || lastName.length<3){
+                window.alert("Campos Invalido")
+            }else {
+                alert("Bienvenido "+ name + " "+ lastName)
+            }
+        }
+        
+    </script>
+</body>
+</html>
